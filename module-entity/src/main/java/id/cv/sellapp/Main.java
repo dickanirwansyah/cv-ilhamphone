@@ -1,0 +1,7 @@
+package id.cv.sellapp;
+
+public class Main {
+
+    public static void main(String[] args){}
+
+}
