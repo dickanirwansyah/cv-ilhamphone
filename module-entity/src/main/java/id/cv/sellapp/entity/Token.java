@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @Builder
@@ -26,4 +27,7 @@ public class Token implements Serializable {
     @ManyToOne
     @JoinColumn(name = "pengguna_id", nullable = false)
     private Pengguna pengguna;
+
+    @Column(name = "expired_token")
+    private Date expiredToken;
 }
