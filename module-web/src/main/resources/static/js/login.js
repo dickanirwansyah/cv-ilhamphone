@@ -1,5 +1,3 @@
-
-
 $("#submit-login").click(function(){
 
     var login = {
@@ -13,7 +11,7 @@ $("#submit-login").click(function(){
     console.log("payload password : "+login.password);
 
    $.ajax({
-           url: 'http://localhost:8889/api/pengguna/login',
+           url: get_uri()+'/api/pengguna/login',
            dataType: 'json',
            type: 'post',
            data: JSON.stringify(login),
